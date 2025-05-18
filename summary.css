@@ -1,0 +1,153 @@
+html {
+    /* font-family: "Caveat", cursive; */
+    /* font-family: "Poppins", serif; */
+    font-family: "Noto Sans JP", serif;
+    /* font-family: "Dancing Script", serif; */
+    /* font-family: "Fraunces", serif; */
+    /* font-family: "Klee One", cursive; */
+}
+
+.Klee {
+    font-family: "Klee One", cursive;
+    font-size: 30px;
+}
+
+.fraunce {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #777e41;
+    margin-bottom: 40px;
+}
+
+/* ヘッダー */
+header {
+    padding: 27px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.logo span {
+    color: #777e41;
+    font-family: "Dancing Script", serif;
+    opacity: 0.5;
+    font-size: 43px;
+}
+
+/* スマホ対応 */
+@media only screen and (max-width:768px) header .container {
+    justify-content: center;
+}
+
+
+
+/* diary */
+#diary {
+    margin-bottom: 120px;
+}
+
+
+#diary h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+#diary h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+
+.diary-2 {
+    width: 100%;
+}
+
+.text {
+    line-height: 2;
+
+}
+
+.text_red {
+    line-height: 2;
+    -webkit-text-fill-color: rgba(224, 74, 74, 0.61);
+}
+
+#diary p img {
+    position: center;
+    display: block;
+    size: cover;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width:768px) {
+    .title {
+        margin-bottom: 30px;
+    }
+
+    #diary h3 {
+        font-size: 26px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .diary-2 {
+        width: 100%;
+    }
+
+    .text {
+        line-height: 1.7;
+        font-size: 15px;
+    }
+
+    #diary p img {
+        height: 240px;
+        margin-top: 50px;
+    }
+
+    .diary-img {
+        display: none;
+    }
+
+
+    .date {
+        font-size: 46px;
+        top: 4px;
+        left: 65px;
+    }
+
+}
